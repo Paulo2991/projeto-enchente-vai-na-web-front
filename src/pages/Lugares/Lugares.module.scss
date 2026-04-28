@@ -1,0 +1,30 @@
+.container{
+  text-align: center;
+  padding: 2rem; 
+}
+
+.titulo{
+   font-size: 2rem;
+   margin-bottom: 2.5rem;
+}
+
+.lugares{ 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2rem;
+}
+
+.lugar{
+   background-color: #ffffff;
+   border-radius: 10px;
+   width: 20em;
+   padding: 1.9rem;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   img{
+      width: 80%;
+      height: auto;
+      border-radius: 15px;  
+      padding: 0.5rem;            
+   }
+}
