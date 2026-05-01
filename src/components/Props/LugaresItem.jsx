@@ -1,9 +1,9 @@
-function LugaresItem({lugares}){
+function LugaresItem({listagem}){
     return (
       <>
-        <h1>{lugares.nome}</h1>
-        <img src={lugares.foto_url} alt={lugares.nome} />
-        <p>{lugares.status == "Verde" ? "Fora De Perigo" : "Está Perigoso"}</p>
+        <h1>{listagem.nome}</h1>
+        <img src={listagem.foto_url} alt={listagem.nome} />
+        <p>{listagem.status == "Verde" ? "Fora De Perigo" : "Está Perigoso"}</p>
       </>
     );
 }

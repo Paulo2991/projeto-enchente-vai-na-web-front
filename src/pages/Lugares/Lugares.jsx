@@ -1,4 +1,4 @@
-import LugaresItem from "../../components/Props/LugaresItem";
+import AdicionarServicos from "../../components/AdicionarServicos/AdicionarServicos";
 import mostrarLugares from "../../service/ConsulmoApi";
 import s from "./Lugares.module.scss";
 
@@ -8,18 +8,7 @@ function Lugares(){
      <>
        <section className={s.container}>
          <h2 className={s.titulo}>Lista De Lugares Disponiveis</h2>
-
-         {lugares.length === 0 ? (
-           <p>Nenhum lugar disponível no momento.</p>
-         ) : (
-           <div className={s.lugares}>
-             {lugares.map((lugar) => (
-               <div key={lugar.id} className={s.lugar}>
-                 <LugaresItem lugares={lugar} />
-               </div>
-             ))}
-           </div>
-         )}
+         <AdicionarServicos listagem={lugares}/>
        </section>
      </>
    );                          

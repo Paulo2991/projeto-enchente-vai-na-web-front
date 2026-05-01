@@ -2,8 +2,8 @@ import axios from "axios";
 
 function Api(){
   const dados = axios.create({
-   baseURL: "http://localhost:3000"
- });
+    baseURL: "https://projeto-enchete-vai-na-web-back.onrender.com/",
+  });
  return dados;  
                             
 }
